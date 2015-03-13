@@ -53,7 +53,7 @@ public class Sindrella {
 					sumOfDigits+= 8;
 				}
 				else{
-					int number = key.charAt(key.length()-2) - '0';
+					int number = Integer.parseInt(key.substring(key.length()-2));
 					if(number % 2 == 0){
 						key += '0';
 					}
